@@ -370,3 +370,105 @@ nav {
   background: url(http://lorempixel.com/900/904);
   background-size: cover;
 } 
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*Home*/
+#homepg{
+  background-image: url(../images/flower2.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: cover;
+    font-family: 'PT Sans';
+  background-attachment: fixed;
+  min-height: 100%
+  -webkit-text-size-adjust: none;
+    overflow-x: hidden;
+}
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*portfolio*/
+#portpg{
+  background-image: url(../images/flower2.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: cover;
+    font-family: 'PT Sans';
+  background-attachment: fixed;
+  min-height: 100%
+  -webkit-text-size-adjust: none;
+    overflow-x: hidden;
+}
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*blog*/
+#blogpg{
+  background-image: url(../images/flower2.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: cover;
+    font-family: 'PT Sans';
+  background-attachment: fixed;
+  min-height: 100%
+  -webkit-text-size-adjust: none;
+    overflow-x: hidden;
+}
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*todo-list*/
+#todopg{
+  background-image: url(../images/flower2.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: cover;
+    font-family: 'PT Sans';
+  background-attachment: fixed;
+  min-height: 100%
+  -webkit-text-size-adjust: none;
+    overflow-x: hidden;
+}
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*intsagramapi*/
+#instapg{
+  background-image: url(../images/flower2.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: cover;
+    font-family: 'PT Sans';
+  background-attachment: fixed;
+  min-height: 100%
+  -webkit-text-size-adjust: none;
+    overflow-x: hidden;
+}
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*contact*/
+#contactpg{
+  background-image: url(../images/flower2.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: cover;
+    font-family: 'PT Sans';
+  background-attachment: fixed;
+  min-height: 100%
+  -webkit-text-size-adjust: none;
+    overflow-x: hidden;
+}

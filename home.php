@@ -8,7 +8,7 @@
 	<link type="text/css" rel="stylesheet"  href="css/main.css">
 	<title></title>
 </head>
-<body>
+<body id="homepg">
 <div id="container">
 	<div class="navT">
 		<div class="icon"></div>
