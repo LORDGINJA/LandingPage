@@ -1,0 +1,164 @@
+$sansserif : 'Open Sans', sans-serif;
+$serif     : 'Fenix', serif;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+html {
+  height: 100%;
+  width: 100%;
+  
+  &:before {
+    content:'';
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    border: 10px solid #B1B58D;
+  }
+}
+ 
+body {
+  font-family: $serif;
+  color: #535353;
+}
+
+p { margin: 20px 0; }
+
+nav {
+  
+  ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  } 
+
+  li { 
+    list-style-type: none;
+    height: 100%;
+    position: relative; 
+    left: -4000px;
+    
+    &:nth-child(1) {
+      background: #B1B58D;
+    }
+    &:nth-child(2) {
+      background: #CECCA0;
+    }
+    &:nth-child(3) {
+      background: #B09D64;
+    }
+    &:nth-child(4) {
+      background: #304752;
+    }
+    &:nth-child(5) {
+      background: #378D9F;
+    }
+    &:nth-child(6) {
+      background: #B9C3A2;
+    }
+    &:nth-child(7) {
+      background: #AB5D2B;
+    }
+
+    a {
+      color: #fff;
+      text-shadow: 1px 1px 2px #000;
+      font-size: 2.5em;
+      text-decoration: none;
+      width: 100%;
+      height: 100%;
+      display: block;
+      line-height: 250%;
+      padding-left: 5%;
+    }
+  }
+}
+
+.fa-reorder {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 40px;
+  cursor: pointer;
+  color: #333;
+}
+ 
+.copy { 
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .inner-copy {
+    margin: 2% 12%;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  
+  p {
+    letter-spacing: 1px;
+    font-size: 1.6em;
+    text-align: justify;
+  }
+} 
+
+.hero {
+  position: relative;
+  z-index: -1;
+  max-height: 200px;
+  min-height: 300px;
+  height: 400px;
+    h1 {
+      font-family: $sansserif;
+      font-size: 7em;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      margin-top: 120px;
+      color: #fff;
+      text-shadow: 1px 1px 2px #000;
+  }
+}
+
+/* hero backgrounds */
+
+#home .hero {
+    background: url(http://farm4.staticflickr.com/3291/3023845886_02a6dac9c4_z.jpg);
+    background-size: cover;
+}
+
+#about .hero{
+     background: url('http://farm4.staticflickr.com/3007/2699674480_285080c322_b.jpg');
+    background-size: cover;
+}
+
+#clients .hero {
+  background: url(http://lorempixel.com/900/900);
+  background-size: cover;
+}
+
+#portfolio .hero {
+  background: url(http://lorempixel.com/900/901);
+  background-size: cover;
+}
+
+#are .hero {
+  background: url(http://lorempixel.com/900/902);
+  background-size: cover;
+}
+
+#do .hero {
+  background: url(http://lorempixel.com/900/903);
+  background-size: cover;
+}
+
+#contact .hero {
+  background: url(http://lorempixel.com/900/904);
+  background-size: cover;
+} 
