@@ -12,22 +12,24 @@ html {
 
 #container {
   z-index: 111;
-  margin-bottom: 400px;
+  margin-bottom: 320px;
+  opacity: .8;
 }
 
 .navT {
-  -webkit-transition: all 0.25s;
+  -webkit-transition: all 1s;
   z-index: 111;
   cursor: pointer;
   width: 100%;
-  background: #212121;
+  background: black;
   height: 65px;
   left: 0;
   top: 0;
   position: fixed;
+
 }
 .navT .icon {
-  -webkit-transition: all 0.25s;
+  -webkit-transition: all 1s;
   position: absolute;
   width: 30px;
   height: 1px;
@@ -36,7 +38,7 @@ html {
   background-color: white;
 }
 .navT .icon:before, .navT .icon:after {
-  -webkit-transition: all 0.25s;
+  -webkit-transition: all 1s;
   width: 30px;
   height: 1px;
   left: 0;
@@ -51,7 +53,7 @@ html {
   top: 10px;
 }
 .navT:hover {
-  background: black;
+  background: rgb(22, 22, 22);
 }
 .navT:hover .icon:before {
   top: -12px;
@@ -76,7 +78,7 @@ html {
 
 #menu {
   z-index: 111;
-  -webkit-transition: all 0.5s;
+  -webkit-transition: all 1s;
   text-align: center;
   position: fixed;
   left: 0;
@@ -94,29 +96,29 @@ html {
 }
 #menu ul {
   list-style: none;
-  padding: 0;
+  padding-bottom: 5%;
   letter-spacing: 0.4em;
 }
 #menu li:first-child {
   margin-top: 0;
 }
 #menu li {
-  -webkit-transition: all 0.2s;
+  -webkit-transition: all 1s;
   margin-top: 20px;
   padding: 5px 0;
   color: white;
 }
 #menu a {
   padding: 8px;
-  -webkit-transition: all 0.25s;
+  -webkit-transition: all 1s;
   cursor: pointer;
 }
 #menu a:hover {
   letter-spacing: 0.5em;
   text-decoration: underline;
 }
-#menu.open {
-  height: 270px;
+#menu.opens {
+  height: auto;
   width: 100%;
   background: black;
   border-bottom: 1px solid black;
@@ -128,19 +130,15 @@ html {
 
 .content {
   width: 100%;
-  font-size: 20px;
   font-family: sans-serif;
   font-weight: 100;
-  -webkit-transition: top 0.5s;
+  -webkit-transition: top 1s;
   position: absolute;
-  top: 65px;
   margin: 0 auto;
 }
 .content h1 {
-  font-size: 3em;
   text-transform: uppercase;
-  margin-top: 85px;
-  margin-left: 10px;
+
 }
 .content h2 {
   font-size: 1em;
@@ -321,7 +319,6 @@ nav {
   z-index: -1;
   max-height: 200px;
   min-height: 300px;
-  height: 400px;
     h1 {
       font-family: $sansserif;
       font-size: 7em;
@@ -375,14 +372,14 @@ nav {
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*Home*/
 #homepg{
-  background-image: url(../images/flower2.jpg);
+  background-image: url(../images/flower4.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
     background-size: cover;
     font-family: 'PT Sans';
   background-attachment: fixed;
-  min-height: 100%
+  min-height: 100%;
   -webkit-text-size-adjust: none;
     overflow-x: hidden;
 }
@@ -393,14 +390,14 @@ nav {
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*portfolio*/
 #portpg{
-  background-image: url(../images/flower2.jpg);
+  background-image: url(../images/flower.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
     background-size: cover;
     font-family: 'PT Sans';
   background-attachment: fixed;
-  min-height: 100%
+  min-height: 100%;
   -webkit-text-size-adjust: none;
     overflow-x: hidden;
 }
@@ -471,4 +468,13 @@ nav {
   min-height: 100%
   -webkit-text-size-adjust: none;
     overflow-x: hidden;
+}
+
+
+
+
+#header{
+  font-size: 50px;
+  text-align: center;
+  color: white;
 }

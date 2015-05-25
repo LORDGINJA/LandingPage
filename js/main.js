@@ -1,6 +1,6 @@
 $(".navT").on("click", function() {
   $(this).toggleClass("active");
-  $("#menu").toggleClass("open");
+  $("#menu").toggleClass("opens");
   $(".content").toggleClass("shift");
 
 })
@@ -29,7 +29,7 @@ $('.fa-reorder').on('click', function(){
     }, timer);    
     });
     
-    $('.fa-reorder').fadeOut(100);
+    $('.fa-reorder').fadeOut(1000);
   });
 
 //Nav out
@@ -40,7 +40,7 @@ $('nav li a').on('click', function(){
     var $this = $(this);
     setTimeout(function(){
       $this.animate({ left : -leftPos }, 200, function(){
-        $('.fa-reorder').fadeIn(500);
+        $('.fa-reorder').fadeIn(1000);
       });
     }, timer); 
   });
@@ -57,4 +57,7 @@ function browserHeight(){
 browserHeight();
 
 $(window).on('resize', browserHeight);
+
+
+
 
