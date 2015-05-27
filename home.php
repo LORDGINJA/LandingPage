@@ -16,7 +16,7 @@
 		<div class="icon"></div>
 	</div>
 
-	<div id="menu" id="navbar-example">
+	<div id="menu" >
 		<ul class="nav nav-tabs" role="tablist">
 			<li><a href="#homepg">Hom<span class="space">e</span></a></li>
 			<li><a href="#Projects">Project<span class="space">s</span></a></li>
@@ -26,36 +26,20 @@
 </div>
 <section class="content" id="homepg home">
 	 <div id="header">
-	    <button class="btn btn-primary btn-lg" class="headingbutton" data-toggle="modal" data-target="#myModal">
+	  
               <div id="header" class="primary-wrapper">
                   <h1>Maxwell <br> Karp</h1>
               </div>
-          </button>
+        
          
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Portfolio</h4>
-                  </div>
-                  <div class="modal-body">
-                    <img class="img-responsive" id="mogulpara"  >       
-                    <p id="mogulpara">
-                      This is my Portfolio project. It uses HTML, CSS, and Javascript.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div> 
-           </div>
-		</div>
+            
   </div>
 </section>	
 
 	
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 
 </html>
