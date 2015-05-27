@@ -5,20 +5,25 @@
 <h1>REGISTER</h1>
 <!-- goes to create-user page and displays whatevers there -->   <!-- used to create users -->
 <form class="register" method="post" action="<?php echo $path . "controller/create-user.php";?> ">
+	<div id="username">
+		<!-- input box for user's username  -->
+		<label for="name">Name: </label>
+		<input type="text" name="username"/>
+	</div>
+	<div id="number">
+		<!-- input box for user's username  -->
+		<label for="name">Number: </label>
+		<input type="integer" name="number"/>
+	</div>
 	<div id="email">
 		<!-- input box for user's email -->
 		<label for="email">Email: </label>
 		<input type="text" name="email"/>
 	</div>
-	<div id="username">
+	<div id="other">
 		<!-- input box for user's username  -->
-		<label for="username">Username: </label>
-		<input type="text" name="username" />
-	</div>
-	<div id="password">
-		<!-- input box for user's password -->
-		<label for="password">Password: </label>
-		<input type="password" name="password"/>
+		<label for="name">Other: </label>
+		<input type="text" name="other" />
 	</div>
 	<div>
 		<!-- button to submit previous three input values -->
