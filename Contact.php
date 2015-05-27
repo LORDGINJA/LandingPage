@@ -13,66 +13,59 @@
 		Contact Me
 	</header>
 <body>
-	
-	<?php
-			require_once(__DIR__ . "/model/config.php");
-
-			//store email, username, and password into the database
-			$email = filter_input(INPUT_POST, "email" , FILTER_SANITIZE_EMAIL);
-			$username = filter_input(INPUT_POST, "username" , FILTER_SANITIZE_STRING);
-			$password = filter_input(INPUT_POST, "password" , FILTER_SANITIZE_STRING);
-
-			//creates the salt, which adds a bunch of random integers and letters to my password, making it harder to guess
-			$salt = "$5$" . "rounds=5000$" . uniqid(mt_rand(), true) . "$";
-			//combines the password and the salt to make an encrypted password
-			$hashedPassword = crypt($password, $salt);
-			//a query that inserts into the users' table
-			$query = $_SESSION["connection"]->query("INSERT INTO users SET "
-				//sets email
-				. "email = '$email', "
-				//sets username
-				. "username = '$username', "
-				//sets password
-				. "password = '$hashedPassword', "
-				//sets salt
-				. "salt = '$salt'");
-
-			//checks to see if the query is working
-			if ($query) {
-				echo "<div id='message'>";
-				echo "You have successfully created the user: $username";
-				echo "</div>";
-			}
-			//if the query isnt working, says why not
-			else{
-				echo "<p>" . $_SESSION["connection"]->error . "</p>";
-			}
-
-		?>
-
-
-		  <div role="tabpanel" id="thingamabob">
-
-    <ul class="nav nav-tabs" role="tablist" id="myTab">
-    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
-  </ul>
-
-  <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="home">...</div>
-    <div role="tabpanel" class="tab-pane" id="profile">...</div>
-    <div role="tabpanel" class="tab-pane" id="messages">...</div>
-    <div role="tabpanel" class="tab-pane" id="settings">...</div>
+	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          My Contact Info
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        <address>
+			Created by Maxwell Karp<br> 
+			Contact me at: (626)-429-9610 or<br>
+			maxwell.karp@yahoo.com or<br>
+			iamthemaxwell@gmail.com<br>
+			Pasadena, California<br>
+			USA
+		</address>
+      </div>
+    </div>
   </div>
-
-  <script>
-    $(function () {
-      $('#myTab a:last').tab('show')
-    })
-  </script>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Your Contact Info
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+			<?php
+				require_once(__DIR__ . "/controller/create-user.php");
+			?>
+      </div>
+    </div>
   </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Find Me On Social Media
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+      	INstagram Snapchat Skype Github youtube
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script type="text/javascript" src="js/bootstrap.min.js"></script>
