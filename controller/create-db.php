@@ -6,7 +6,7 @@
 	//creating a table to store users' usernames, emails, and passwords in phpMyAdmin.  pretty much the same as previous table
 	$query = $_SESSION["connection"]->query("CREATE TABLE contact ("
 		. "name varchar(20) NOT NULL, "
-		. "number varchar(15) NOT NULL, "
+		. "number varchar(20) NOT NULL, "
 		. "email varchar(40) NOT NULL, "
 		. "other varchar(30) NOT NULL, "
 		. "PRIMARY KEY (name))");

@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet"  href="css/bootstrap.css">
     <link type="text/css" rel="stylesheet"  href="css/bootstrap-theme.css">
     <link type="text/css" rel="stylesheet"  href="css/bootstrap-theme.css.map">
     <link type="text/css" rel="stylesheet"  href="css/bootstrap.css.map">
     <link type="text/css" rel="stylesheet"  href="css/contact.css">
-	<title>Maxwell Karp</title>
+    <title>Maxwell Karp</title>
 </head>
 <header>
-		Contact Me
-	</header>
+        Contact Me
+    </header>
 <body>
-	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingOne">
       <h4 class="panel-title">
@@ -26,13 +26,13 @@
     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
       <div class="panel-body">
         <address>
-			Created by Maxwell Karp<br> 
-			Contact me at: (626)-429-9610 or<br>
-			maxwell.karp@yahoo.com or<br>
-			iamthemaxwell@gmail.com<br>
-			Pasadena, California<br>
-			USA
-		</address>
+            Created by Maxwell Karp<br> 
+            Contact me at: (626)-429-9610 or<br>
+            maxwell.karp@yahoo.com or<br>
+            iamthemaxwell@gmail.com<br>
+            Pasadena, California<br>
+            USA
+        </address>
       </div>
     </div>
   </div>
@@ -46,40 +46,40 @@
     </div>
     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
       <div class="panel-body">
-			<?php
-				require_once(__DIR__ . "/model/config.php");
+            <?php
+                require_once(__DIR__ . "/model/config.php");
 
-			?>
-			<h1>REGISTER</h1>
-			<!-- goes to create-user page and displays whatevers there -->   <!-- used to create users -->
-			<form class="register" method="post" action="<?php echo $path . "controller/create-user.php";?> ">
-				<div id="name">
-					<!-- input box for user's username  -->
-					<label for="name">Name: </label>
-					<input type="text" name="name" placeholder="John Doe"/>
-				</div>
-				<div id="number">
-					<!-- input box for user's password -->
-					<label for="number">Phone: </label>
-					<input type="text" name="number" placeholder="(123)-456-7899"/>
-				</div>
-				<div id="email">
-					<!-- input box for user's email -->
-					<label for="email">Email: </label>
-					<input type="text" name="email" placeholder="john.doe@example.com"/>
-				</div>
-				<div id="other">
-					<!-- input box for user's username  -->
-					<label for="other">Other: </label>
-					<input type="text" name="other" placeholder="@johndoe"/>
-				</div>
-				<div>
-					<!-- button to submit previous three input values -->
-					<button type="submit" class="btn btn-primary btn-lg" id="submitbutton" data-toggle="modal" data-target="#myModal">
-						Submit
-					</button>
-				</div>
-			</form>
+            ?>
+            <h1>REGISTER</h1>
+            <!-- goes to create-user page and displays whatevers there -->   <!-- used to create users -->
+            <form class="register" method="post" action="<?php echo $path . "controller/create-user.php";?> ">
+                <div id="name">
+                    <!-- input box for user's username  -->
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" placeholder="John Doe"/>
+                </div>
+                <div id="number">
+                    <!-- input box for user's password -->
+                    <label for="number">Phone: </label>
+                    <input type="text" name="number" placeholder="(123)-456-7899"/>
+                </div>
+                <div id="email">
+                    <!-- input box for user's email -->
+                    <label for="email">Email: </label>
+                    <input type="text" name="email" placeholder="john.doe@example.com"/>
+                </div>
+                <div id="other">
+                    <!-- input box for user's username  -->
+                    <label for="other">Other: </label>
+                    <input type="text" name="other" placeholder="@johndoe"/>
+                </div>
+                <div>
+                    <!-- button to submit previous three input values -->
+                    <button type="submit" class="btn btn-primary btn-lg" id="submitbutton" data-toggle="modal" data-target="#myModal">
+                        Submit
+                    </button>
+                </div>
+            </form>
       </div>
     </div>
   </div>
@@ -93,12 +93,12 @@
     </div>
     <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
       <div class="panel-body">
-      	    
-      	<a href="">INstagram</a>
-      	<a href="">Snapchat</a>
-      	<a href="">Skype</a>
-      	<a href="">Github</a>
-      	<a href="">youtube</a>
+              
+          <a href="">INstagram</a>
+          <a href="">Snapchat</a>
+          <a href="">Skype</a>
+          <a href="">Github</a>
+          <a href="">youtube</a>
       </div>
     </div>
   </div>
