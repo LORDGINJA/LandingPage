@@ -1,4 +1,5 @@
 <?php
+require_once(__DIR__ . "/../connect.php"); 
 	//a class is an object that can be used whereever it is called
 	class Database{  
 		//the "private" before the variable makes it so that these variables can only be used here
@@ -45,7 +46,7 @@
 			//runs when database has already been created
 			else{
 				//echoes that the database already exists 
-				echo "<p>Database already exists</p>"; 
+				//echo "<p>Database already exists</p>"; 
 			}
 		}
 

@@ -1,6 +1,7 @@
 <?php
 
 	require_once(__DIR__ . "/Database.php");
+	require_once(__DIR__ . "/../connect.php"); 
 	//starts the session
 	session_start();
 	//prevents hackers from using previusly authenticated users to access the website

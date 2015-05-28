@@ -7,6 +7,7 @@
     <link type="text/css" rel="stylesheet"  href="css/bootstrap-theme.css">
     <link type="text/css" rel="stylesheet"  href="css/bootstrap-theme.css.map">
     <link type="text/css" rel="stylesheet"  href="css/bootstrap.css.map">
+    <link type="text/css" rel="stylesheet"  href="css/contact.css">
 	<title>Maxwell Karp</title>
 </head>
 <header>
@@ -47,37 +48,38 @@
       <div class="panel-body">
 			<?php
 				require_once(__DIR__ . "/model/config.php");
+				
 			?>
 			<h1>REGISTER</h1>
-<!-- goes to create-user page and displays whatevers there -->   <!-- used to create users -->
-<form class="register" method="post" action="<?php echo $path . "controller/create-user.php";?> ">
-	<div id="username">
-		<!-- input box for user's username  -->
-		<label for="name">Name: </label>
-		<input type="text" name="username" placeholder="John Doe"/>
-	</div>
-	<div id="number">
-		<!-- input box for user's password -->
-		<label for="number">Number: </label>
-		<input type="text" name="number" placeholder="(123)-456-7899"/>
-	</div>
-	<div id="email">
-		<!-- input box for user's email -->
-		<label for="email">Email: </label>
-		<input type="text" name="email" placeholder="john.doe@example.com"/>
-	</div>
-	<div id="other">
-		<!-- input box for user's username  -->
-		<label for="other">Other: </label>
-		<input type="text" name="other" placeholder="@johndoe"/>
-	</div>
-	<div>
-		<!-- button to submit previous three input values -->
-		<button type="submit" class="btn btn-primary btn-lg" class="headingbutton" data-toggle="modal" data-target="#myModal">
-			Submit
-		</button>
-	</div>
-</form>
+			<!-- goes to create-user page and displays whatevers there -->   <!-- used to create users -->
+			<form class="register" method="post" action="<?php echo $path . "controller/create-user.php";?> ">
+				<div id="username">
+					<!-- input box for user's username  -->
+					<label for="name">Name: </label>
+					<input type="text" name="username" placeholder="John Doe"/>
+				</div>
+				<div id="number">
+					<!-- input box for user's password -->
+					<label for="number">Phone: </label>
+					<input type="text" name="number" placeholder="(123)-456-7899"/>
+				</div>
+				<div id="email">
+					<!-- input box for user's email -->
+					<label for="email">Email: </label>
+					<input type="text" name="email" placeholder="john.doe@example.com"/>
+				</div>
+				<div id="other">
+					<!-- input box for user's username  -->
+					<label for="other">Other: </label>
+					<input type="text" name="other" placeholder="@johndoe"/>
+				</div>
+				<div>
+					<!-- button to submit previous three input values -->
+					<button type="submit" class="btn btn-primary btn-lg" id="submitbutton" data-toggle="modal" data-target="#myModal">
+						Submit
+					</button>
+				</div>
+			</form>
       </div>
     </div>
   </div>

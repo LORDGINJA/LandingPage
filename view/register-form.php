@@ -1,8 +1,9 @@
 <?php
 	require_once(__DIR__ ."/../model/config.php");
+	require_once(__DIR__ . "/../connect.php"); 
 ?>
 
-<h1>REGISTER</h1>
+<h1>REGISsjcvsdjvsdvTER</h1>
 <!-- goes to create-user page and displays whatevers there -->   <!-- used to create users -->
 <form class="register" method="post" action="<?php echo $path . "controller/create-user.php";?> ">
 	<div id="username">
@@ -12,7 +13,7 @@
 	</div>
 	<div id="number">
 		<!-- input box for user's username  -->
-		<label for="name">Number: </label>
+		<label for="name">Phone#: </label>
 		<input type="integer" name="number"/>
 	</div>
 	<div id="email">
