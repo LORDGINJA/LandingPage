@@ -48,15 +48,15 @@
       <div class="panel-body">
 			<?php
 				require_once(__DIR__ . "/model/config.php");
-				
+
 			?>
 			<h1>REGISTER</h1>
 			<!-- goes to create-user page and displays whatevers there -->   <!-- used to create users -->
 			<form class="register" method="post" action="<?php echo $path . "controller/create-user.php";?> ">
-				<div id="username">
+				<div id="name">
 					<!-- input box for user's username  -->
 					<label for="name">Name: </label>
-					<input type="text" name="username" placeholder="John Doe"/>
+					<input type="text" name="name" placeholder="John Doe"/>
 				</div>
 				<div id="number">
 					<!-- input box for user's password -->
