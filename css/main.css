@@ -492,3 +492,9 @@ nav {
   body{
     }
 }
+
+#title{
+  text-align: center; 
+  color: #2a6496; 
+  font-size: 40px;
+}

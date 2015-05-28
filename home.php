@@ -14,13 +14,14 @@
 <div id="container">
 	<div class="navT">
 		<div class="icon"></div>
+		<div id="title">H O M E</div>
 	</div>
 
 	<div id="menu" >
 		<ul class="nav nav-tabs" role="tablist">
-			<li><a href="#homepg">Hom<span class="space">e</span></a></li>
-			<li><a href="#Projects">Project<span class="space">s</span></a></li>
-			<li><a href="#Contacts">Contac<span class="space">t</span></a></li>
+			<li><a href="/LandingPage/home.php">Hom<span class="space">e</span></a></li>
+			<li><a href="/LandingPage/Projects.php">Project<span class="space">s</span></a></li>
+			<li><a href="/LandingPage/Contact.php">Contac<span class="space">t</span></a></li>
 		</ul>
 	</div>
 </div>

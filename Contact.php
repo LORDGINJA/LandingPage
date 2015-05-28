@@ -10,11 +10,21 @@
     <link type="text/css" rel="stylesheet"  href="css/contact.css">
     <title>Maxwell Karp</title>
 </head>
-<header>
-        Contact Me
-    </header>
 <body>
-    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <div id="container">
+  <div class="navT">
+    <div class="icon"></div>
+    <div id="title">C O N T A C T</div>
+  </div>
+  
+  <div id="menu">
+    <ul>
+      <li><a href="/LandingPage/home.php">Hom<span class="space">e</span></a></li>
+      <li><a href="/LandingPage/Projects.php">Project<span class="space">s</span></a></li>
+      <li><a href="/LandingPage/Contact.php">Contac<span class="space">t</span></a></li>
+    </ul>
+  </div>
+<div class="panel-group content" id="accordion" role="tablist" aria-multiselectable="true">
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingOne">
       <h4 class="panel-title">
@@ -50,7 +60,7 @@
                 require_once(__DIR__ . "/model/config.php");
 
             ?>
-            <h1>REGISTER</h1>
+            <h1 id="acheone">Enter Your Info</h1>
             <!-- goes to create-user page and displays whatevers there -->   <!-- used to create users -->
             <form class="register" method="post" action="<?php echo $path . "controller/create-user.php";?> ">
                 <div id="name">
@@ -75,9 +85,10 @@
                 </div>
                 <div>
                     <!-- button to submit previous three input values -->
-                    <button type="submit" class="btn btn-primary btn-lg" id="submitbutton" data-toggle="modal" data-target="#myModal">
+                    <button type="submit" class="btn btn-primary btn-lg" id="submitbutton" data-toggle="modal" data-target="#myModal" >
                         Submit
                     </button>
+                    
                 </div>
             </form>
       </div>

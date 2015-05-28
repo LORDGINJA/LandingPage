@@ -14,13 +14,14 @@
     <div id="container">
   <div class="navT">
     <div class="icon"></div>
+    <div id="title">P R O J E C T S</div>
   </div>
   
   <div id="menu">
     <ul>
-      <li><a>Hom<span class="space">e</span></a></li>
-      <li><a>Project<span class="space">s</span></a></li>
-      <li><a>Contac<span class="space">t</span></a></li>
+      <li><a href="/LandingPage/home.php">Hom<span class="space">e</span></a></li>
+      <li><a href="/LandingPage/Projects.php">Project<span class="space">s</span></a></li>
+      <li><a href="/LandingPage/Contact.php">Contac<span class="space">t</span></a></li>
     </ul>
   </div>
 
