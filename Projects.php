@@ -24,7 +24,22 @@
       <li><a href="/LandingPage/Contact.php">Contac<span class="space">t</span></a></li>
     </ul>
   </div>
+</div>
 
+<div id="carousel">
+  <figure id="spinner">
+    <img id="p" src="" alt="">
+    <img id="b" src="" alt="">
+    <img id="t" src="" alt="">
+    <img id="i" src="" alt="">
+    <img id="cimg" src="" alt="">
+    <img id="cimg" src="" alt="">
+    <img id="cimg" src="" alt="">
+    <img id="cimg" src="" alt="">
+  </figure>
+</div>
+<span style=float:left class=ss-icon onclick="galleryspin('-')">&lt;</span>
+<span style=float:right class=ss-icon onclick="galleryspin('')">&gt;</span>
 
 
    
