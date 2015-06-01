@@ -106,13 +106,13 @@
       <div class="panel-body">
               
           <a href="http://instagram.com/lambadoodle?ref=badge"><img class="icn" src="/LandingPage/images/ins.png"> </a>
-          <a href="http://instagram.com/lambadoodle?ref=badge"><img class="icn" src="/LandingPage/images/git.png"> </a>
+          <a href="https://github.com/LORDGINJA"><img class="icn" src="/LandingPage/images/git.png"> </a>
           <a href="http://instagram.com/lambadoodle?ref=badge"><img class="icn" src="/LandingPage/images/skype.png"> </a>
           <a href="https://www.youtube.com/channel/UCG-JJVUuD8AhFUpYytsG2tw/feed?view_as=public"><img class="icn" src="/LandingPage/images/you.png"> </a>
           <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><img class="icn" src="/LandingPage/images/snap.png"></a>
           <div class="collapse" id="collapseExample">
             <div class="well">
-              ...
+              <img id="photo" src="/LandingPage/images/photo.png">
             </div>
           </div>      
       </div>
