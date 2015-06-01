@@ -3,16 +3,15 @@
 <head>
   	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet"  href="/../css/bootstrap.css">
-    <link type="text/css" rel="stylesheet"  href="/../css/bootstrap-theme.css">
-    <link type="text/css" rel="stylesheet"  href="/../css/bootstrap-theme.css.map">
-    <link type="text/css" rel="stylesheet"  href="/../css/bootstrap.css.map">
-    <link type="text/css" rel="stylesheet"  href="/../css/fin.css">
+    <link type="text/css" rel="stylesheet"  href="../css/bootstrap.css">
+    <link type="text/css" rel="stylesheet"  href="../css/bootstrap-theme.css">
+    <link type="text/css" rel="stylesheet"  href="../css/bootstrap-theme.css.map">
+    <link type="text/css" rel="stylesheet"  href="../css/bootstrap.css.map">
+    <link type="text/css" rel="stylesheet"  href="../css/fin.css">
     <title>Maxwell Karp</title>
-	<title></title>
 </head>
 <header>
-	<h1>Thank You</h1>
+	<h1>Thank You!</h1>
 </header>
 
 <body>
@@ -41,7 +40,7 @@
 		//checks to see if the query is working
 		if ($query) {
 			echo "<div id='message'>";
-			echo "I will contact you ($name) as soon as possible";
+			echo "I will contact you as soon as possible.";
 			echo "</div>";
 		}
 		//if the query isnt working, says why not
@@ -53,7 +52,7 @@
 
 	<div class="links">
 		<ul>
-			<button type="button" class="btn btn-default btn-lg link">
+			<button type="button" class="btn btn-default btn-lg link" id="boton">
 				<a href="<?php echo $path . "Contact.php"?>"><span class="glyphicon glyphicon-home "></span></p> Back </a>
 			</button>
 		</ul>
