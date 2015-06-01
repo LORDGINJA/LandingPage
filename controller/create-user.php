@@ -54,7 +54,7 @@
 	<div class="links">
 		<ul>
 			<button type="button" class="btn btn-default btn-lg link">
-				<a href="<?php echo $path . "home.php"?>"><span class="glyphicon glyphicon-home "></span></p> Home </a>
+				<a href="<?php echo $path . "Contact.php"?>"><span class="glyphicon glyphicon-home "></span></p> Back </a>
 			</button>
 		</ul>
 	</div>

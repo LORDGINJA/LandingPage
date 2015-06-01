@@ -25,23 +25,15 @@
     </ul>
   </div>
 </div>
-
-<div id="carousel">
-  <figure id="spinner">
-    <img id="p" src="" alt="">
-    <img id="b" src="" alt="">
-    <img id="t" src="" alt="">
-    <img id="i" src="" alt="">
-    <img id="cimg" src="" alt="">
-    <img id="cimg" src="" alt="">
-    <img id="cimg" src="" alt="">
-    <img id="cimg" src="" alt="">
-  </figure>
+<div class="content" id="projectlist">
+  <div id="scrll">
+    <a href="../ME/index.html"><div id="p">Portfolio</div></a>
+    <a href="../blogproject/home.php"><div id="b">Blog</div></a>
+    <a href="../todo-2/home.php"><div id="t">Todo-List</div></a>
+    <a href="../maxapi/index.php"><div id="i">Instagram Api</div></a>
+    <a href="../Awesomenauts/index.php"><div id="a">Awesomenauts</div></a>
+  </div>
 </div>
-<span style=float:left class=ss-icon onclick="galleryspin('-')">&lt;</span>
-<span style=float:right class=ss-icon onclick="galleryspin('')">&gt;</span>
-
-
    
   </body>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
